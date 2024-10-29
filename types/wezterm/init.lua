@@ -7,7 +7,6 @@
 ---@class Wezterm :ExecDomain
 ---@field GLOBAL table<string, ANY>
 ---@field action Action
----@field action_callback fun(win: Window, pane: Pane, ...: any): (nil | false)
 ---@field add_to_config_reload_watch_list fun(path: string): nil Adds path to the list of files that are watched for config changes. If `automatically_reload_config` is enabled, then the config will be reloaded when any of the files that have been added to the watch list have changed.
 ---@field background_child_process fun(args: string[]): nil Accepts an argument list; it will attempt to spawn that command in the background.
 ---@field battery_info fun(): BatteryInfo[] Returns battery information for each of the installed batteries on the system. This is useful for example to assemble status information for the status bar.
